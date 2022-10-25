@@ -1,0 +1,22 @@
+{
+  "name": "netflix-men",
+  "version": "1.0.0",
+  "description": "![Carousel de Películas Estilo NETFLIX con HTML5, CSS3 y Javascript.](https://raw.githubusercontent.com/falconmasters/p-gina-estilo-netflix/carousel/img/thumb.png)",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.9.1",
+    "mongoose": "^6.6.0",
+    "node-static": "^0.7.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

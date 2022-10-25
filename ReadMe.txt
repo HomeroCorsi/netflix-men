@@ -1,0 +1,1 @@
+Para visualizar el proyecto, abrir desde consola y ejecutar comando npm start

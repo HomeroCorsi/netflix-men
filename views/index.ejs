@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/layout-general.css">
+	<link rel="stylesheet" href="/css/autoresRooster.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<title>Netflix</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">Homero</h2>
+			<nav>
+				<a href="#" class="activo">Inicio</a>
+				<a href="#">Programas</a>
+				<a href="#">Películas</a>
+				<a href="#">Más Recientes</a>
+				<a href="#">Mi lista</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Interestellar</h3>
+				<p class="descripcion">
+					Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</div>
+	</main>
+
+<h3 class="autores">
+	<% autoresLista.forEach(autor => { %>
+		<figure class="movie">
+			<div class="movie__hero">
+			  <img src="https://www.mensjournal.com/wp-content/uploads/2018/10/rambo-main-3.jpg?quality=86&strip=all" alt="Rambo" class="movie__img">
+			</div>
+			<div class="movie__content">
+			  <div class="movie__title">
+				<h1 class="heading__primary"><%= autor.nombre %><i class="fas fa-fire"></i></h1>
+				<div class="movie__tag movie__tag--1"><%= autor.genero%></div>
+				<div class="movie__tag movie__tag--2"></div>
+			  </div>
+			  <p class="movie__description">
+				<%= autor.descripcion %>
+			  </p>
+			  <div class="movie__details">
+				<p class="movie__detail"><span class="icons icons-red"><i class="fas fa-camera-retro"></i> </span></p>
+				<p class="movie__detail"><span class="icons icons-grey"><i class="fas fa-clock"></i> </span></p>
+				<p class="movie__detail"><span class="icons icons-yellow"><i class="fas fa-file-invoice-dollar"></i>
+				  </span></p>
+			  </div>
+			</div>
+			<div class="movie__price"></div>
+		  </figure>
+
+	<% }) %>
+</h3>
+	
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<!-- <script src="js/main.js"></script> -->
+</body>
+</html>
